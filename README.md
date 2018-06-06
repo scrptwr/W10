@@ -1,5 +1,20 @@
 # Scriptware Windows 10 installation
 
+## Disable Windows Defender
+
+* Use the __Windows key + R__ keyboard shortcut to open the __Run__ command
+* Type __gpedit.msc__ and click __OK__ to open the Local Group Policy Editor
+* Browse the following path:
+
+```
+Computer Configuration > Administrative Templates > Windows Components > Windows Defender
+```
+
+* On the right, double-click __Turn off Windows Defender__
+* Select __Enabled__ to disable Windows Defender
+* Click __Apply__
+* Click __OK__
+
 ## Remove all default Windows apps
 
 Start PowerShell as administrator and run the following command:
@@ -81,7 +96,3 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Explore
 ```
 
 * Restart Windows Explorer
-
-
-
-
